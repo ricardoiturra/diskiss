@@ -1,0 +1,1 @@
+pyinstaller --noconsole --onefile --name diskiss --icon diskiss.ico --add-data "front;front" --add-data "ffmpeg.exe;." --add-data "ffprobe.exe;." app.py

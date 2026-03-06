@@ -1,0 +1,27 @@
+# Build artifacts
+dist/
+build/
+
+# Local binaries
+ffmpeg.exe
+ffprobe.exe
+
+# Python cache and virtual envs
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+log.txt
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db

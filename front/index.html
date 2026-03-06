@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <img src="Diskiss.png" alt="Diskiss" class="logo">
+        </header>
+
+        <main class="app-content">
+            <div id="main-menu" class="panel">
+                <h2 class="panel-title">Selecciona tipo de descarga</h2>
+                <div class="panel-body">
+                    <button id="mp3-btn">Descargar MP3</button>
+                    <button id="playlist-mp3-btn">Descargar Playlist MP3</button>
+                    <button id="mp4-btn">Descargar MP4</button>
+                    <button id="playlist-mp4-btn">Descargar Playlist MP4</button>
+                </div>
+            </div>
+
+            <div id="url-input-section" class="panel" style="display: none;">
+                <div class="panel-title-row">
+                    <h2 class="panel-title">URL y opciones</h2>
+                    <div class="panel-title-actions">
+                        <button id="select-all" class="btn-inline" style="display: none;">Marcar todos</button>
+                        <button id="deselect-all" class="btn-inline" style="display: none;">Desmarcar todos</button>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <input type="text" id="video-url" placeholder="Pega la URL aquí">
+                    <input type="text" id="playlist-dir" placeholder="Nombre de carpeta para la playlist (opcional)" style="display: none;">
+
+                    <div id="playlist-section" style="display: none;">
+                        <p id="playlist-title"></p>
+                        <div id="playlist-items"></div>
+                    </div>
+                </div>
+
+                <div class="panel-actions">
+                    <button id="paste-url">Pegar URL</button>
+                    <button id="load-playlist" style="display: none;">Cargar playlist</button>
+                    <button id="download-btn" style="display: none;">Descargar</button>
+                    <button id="download-selected" style="display: none;">Descargar seleccionados</button>
+                    <button id="back-btn">Volver atrás</button>
+                </div>
+            </div>
+
+            <div id="download-status" class="panel" style="display: none;">
+                <h2 class="panel-title" id="download-status-title">Estado de descarga</h2>
+                <div class="panel-body">
+                    <p id="download-status-text"></p>
+                    <div class="spinner"></div>
+                </div>
+                <div class="panel-actions">
+                    <button id="cancel-download" style="display: none;">Cancelar descarga</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
