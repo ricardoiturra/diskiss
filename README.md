@@ -31,3 +31,10 @@ git add .
 git commit -m "feat: mejora validacion de entradas"
 git pull --rebase origin main
 git push -u origin feature/mejora-descarga
+
+## Descarga de ffmpeg y ffprobe
+
+- Sitio oficial: https://ffmpeg.org/download.html
+- Builds para Windows (recomendado): https://www.gyan.dev/ffmpeg/builds/
+
+Despues de descargar, copia `ffmpeg.exe` y `ffprobe.exe` en la raiz del proyecto (mismo nivel que `app.py`).
